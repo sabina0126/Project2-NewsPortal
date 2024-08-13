@@ -16,9 +16,10 @@ export default function News(props) {
             <section className='py-5'>
                 <div className="container mx-auto">
                     <div className='flex justify-between'>
-                        <h3 className='py-3 text-2xl font-bold uppercase'>{props.title}</h3>
-                        <h5 className='text-blue'><Link to={`/cat/${props.title}`}>View All <i className="bi bi-arrow-right" /></Link></h5>
+                        <h3 className='text-blue-900 py-3 text-2xl font-bold uppercase'>{props.title}</h3>
+                        <h5 className='text-blue-900 font-bold underline'><Link to={`/cat/${props.title}`}>View All <i className="bi bi-arrow-right" /></Link></h5>
                     </div>
+                    <div className="my-2 bg-blue-900 h-[5px]"></div>
                     <div className="flex flex-wrap gap-3">
                         {data.slice(0, 4).map((a) => (
                             <div key={a} className='w-[300px] shadow-lg p-3 border'>
