@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <>
       <section className='bg-stone-100'>
-        <h1 className='p-3 text-4xl font-bold'>NEWS</h1>
-        <hr />
+        <h1 className="container mx-auto text-4xl font-bold text-blue-900">NEWS</h1>
+        <div className="my-2 bg-blue-900 h-[5px]"></div>
         <div className='container mx-auto flex justify-between p-5'>
           <div className=''>
             {data.slice(0, 2).map((a) => (
