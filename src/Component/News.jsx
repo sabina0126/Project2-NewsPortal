@@ -22,10 +22,12 @@ export default function News(props) {
                     <div className="flex flex-wrap gap-3">
                         {data.slice(0, 4).map((a) => (
                             <div key={a} className='w-[300px] shadow-lg p-3 border'>
-                                <img src={a.urlToImage ? a.urlToImage : NOIMG} className='w-full shadow-lg' alt="" />
-                                <div className='py-3'>
-                                    <h4 className='text-2xl font-bold'>{a.title}</h4>
-                                </div>
+                                <Link to={`/details/${a.id}`}>
+                                    <img src={a.urlToImage ? a.urlToImage : NOIMG} className='w-full shadow-lg' alt="" />
+                                    <div className='py-3'>
+                                        <h4 className='text-2xl font-bold'>{a.title}</h4>
+                                    </div>
+                                </Link>
                             </div>
                         ))}
                     </div>
