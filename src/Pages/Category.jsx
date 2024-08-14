@@ -14,9 +14,9 @@ function Category() {
   }, [cid])
   return (
     <>
-      <section className='py-5'>
+      <section className='bg-stone-100 py-5'>
         <div className="container mx-auto">
-          <h3 className='text-2xl font-bold uppercase'>{cid}</h3>
+          <h3 className='text-2xl font-bold uppercase text-blue-900'>{cid}</h3>
           <div className="flex flex-wrap gap-3">
             {data.map((a) => (
               <div key={a} className='w-[300px] shadow p-3 border'>
