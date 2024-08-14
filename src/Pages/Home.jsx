@@ -31,7 +31,7 @@ export default function Home() {
             ))}
           </div>
           <div className='border shadow-lg p-5'>
-            <h4 className='font-bold text-xl py-3 underline'>Recent News</h4>
+            <h4 className="font-bold text-2xl py-3 underline text-blue-900">Recent News</h4>
             <div className="flex flex-wrap gap-3">
               <ul>
                 {data.slice(9, 13).map((a) => (
