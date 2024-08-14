@@ -17,10 +17,7 @@ function Details() {
   }, [id]);
   return (
     <>
-      <section>
-        <div className="my-2 bg-blue-900 h-[5px]"></div>
-      </section>
-      <section className="py-5">
+      <section className="bg-stone-100 py-5">
         <div className="container mx-auto">
           <div className="border shadow-lg py-3">
             <div className="">
